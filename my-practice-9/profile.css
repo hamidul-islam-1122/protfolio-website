@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+    --text-color: #ffffff;
+    --navbar: #1b0d2b;
+    --bodycolor: #0f0618;
+}
+
+.flex {
+    display: flex;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.container {
+    height: 7vh;
+    padding: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--navbar);
+  position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+body {
+    background-color: var(--bodycolor);
+}
+
+.container h3 {
+    margin-right: auto;
+    color: var(--text-color);
+     text-shadow: 0px 5px 30px #1eafe8ab;
+}
+
+nav ul {
+    gap: 30px;
+
+    flex-wrap: wrap;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a:hover {
+    border: 1px solid #1eaee8;
+    border-radius: 10px;
+    padding: 10px;
+    color: #1eaee8;
+    transition:all 0.2s ease;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.colour {
+    filter: contrast(.1);
+}
+
+main {
+    height: auto;
+    width: auto;
+    align-items: center;
+
+}
+
+.profile-img {
+    display: flex;
+    margin-left: auto;
+    filter: drop-shadow(1px 16px 26px #1eaee880);
+    margin-top: 40px;
+
+}
+
+.paragraph {
+    font-size: 60px;
+    color: var(--text-color);
+}
+
+.profile-img img {
+    border-radius: 30%;
+    box-shadow: 1px 1px 6px #1eaee880;
+
+
+}
+
+.about-me p {
+    font-size: large;
+    line-height: 1.5;
+
+}
+
+
+.card {
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+.card1 img {
+    height: auto;
+    width: 46vw;
+    box-shadow: 1px 1px 6px #1eaee880
+}
+
+.card2 img {
+    height: auto;
+    width: 45vw;
+    box-shadow: 1px 1px 6px #1eaee880
+}
+
+.contact-me p a {
+    text-decoration: none;
+    text-shadow: 1px 1px 6px #1eaee880;
+vertical-align: middle;
+    font-size: larger;
+}
+
+p,
+h2,
+h3 {
+    color: var(--text-color);
+}
+.contact-me img{
+  height: auto;
+    filter: drop-shadow(1px 16px 26px #1eaee880);
+  width: 25px;
+  vertical-align: middle;
+}
+
+@media(min-width:747px){
+      .profile-img img {
+        height: auto;
+        width: 300px;
+    }
+
+    
+}
+@media(max-width: 460px) {
+    nav ul {
+        display: none;
+    }
+
+    .on-phone {
+        flex-direction: column;
+        align-items: center;
+        margin: -11px;
+        margin-right: 7px;
+        background-color: transparent;
+        backdrop-filter: blur(5px);
+        width: 156%;
+    }
+
+    nav {
+        margin-top: auto;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+      main {
+
+        flex-direction: column;
+
+    }
+
+    .profile-img img {
+        height: auto;
+        width: 250px;
+    }
+}
+
+@media(min-width: 460px) {
+    .on-phone {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+   
+}
+
+@media(max-width: 750px) {
+
+    .paragraph {
+        font-size: 30px;
+    }
+
+    .profile-img img {
+        height: auto;
+        width: 300px;
+
+    }
+
+    main {
+        height: auto;
+    }
+}
+
+
+
+
+@media(max-width:651px) {
+    #card {
+        flex-direction: column;
+    }
+
+    .card1 img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .card2 img {
+        width: 80vw;
+        height: auto;
+    }
+}
+@media(max-width:307px) {
+     .profile-img img {
+        height: auto;
+        width: 190px;
+    }
+    
+    .container {
+        height: 40px;
+    }
+
+}
+
+@media(max-width:431px) {
+     .profile-img img {
+        height: auto;
+        width:240px;
+    }
+
+}
+@media(max-width:461px) {
+     .profile-img  {
+      margin-right: auto;
+    }
+
+}
+@media (max-width:267px){
+    .profile-img img{
+        height: auto;
+        width: 209px;
+    }
+}
