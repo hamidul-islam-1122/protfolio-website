@@ -70,3 +70,12 @@ span{
 p{
     font-size: larger;
 }
+
+@media (max-width:1200px){
+    .send-message span {
+  background-color: #ffffff;
+  width: auto;
+    border-radius: 10px;
+     filter: drop-shadow(1px 16px 26px #1eaee880);
+}
+}
