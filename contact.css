@@ -62,7 +62,7 @@ h1 {
 .send-message span p  {
   width: auto;
     color: #0f0618;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 span{
     display: inline-block;
@@ -70,12 +70,15 @@ span{
 p{
     font-size: larger;
 }
-
 @media (max-width:1200px){
     .send-message span {
   background-color: #ffffff;
   width: auto;
-    border-radius: 10px;
+    border-radius: 20px;
      filter: drop-shadow(1px 16px 26px #1eaee880);
+}
+.send-message span p {
+      margin-left: 9px;
+      margin-right: 9px;
 }
 }
