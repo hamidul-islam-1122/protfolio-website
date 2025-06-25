@@ -15,7 +15,18 @@
     --navbar: #1b0d2b;
     --bodycolor: #0f0618;
 }
+p, h1, h2, h3, h4, h5, h6, span, img , ul, li {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 1.2s ease-out forwards;
 
+}
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .flex {
     display: flex;
 }
